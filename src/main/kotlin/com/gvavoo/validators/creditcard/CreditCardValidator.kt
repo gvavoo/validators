@@ -2,16 +2,6 @@ package com.gvavoo.validators.creditcard
 
 class CreditCardValidator {
 
-    /**
-     *
-     * Luhn's algorithm implementation to check if the card number
-     * given is a valid credit card number.
-     *
-     * @param number
-     * @return
-     *
-     */
-
     fun isCreditCardValid(number: String): Boolean {
         if (!number.matches(Regex("\\d{12,18}"))) {
             return false
